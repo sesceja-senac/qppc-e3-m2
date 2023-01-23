@@ -1,0 +1,152 @@
+body{
+    background: url('../imgs/background.png') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.menu{
+    background: url('../imgs/caminho.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 1187px;
+    height: 555px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.menu a{
+    width: 220px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+}
+.titulo{margin-bottom: 40px;}
+.menu span{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.menu a:hover span{transform: scale(1.1);}
+.menu a:focus span, .menu a:visited span{opacity: .8;}
+.bt-decolagem{
+    background: url('../imgs/bastao_curto.png') no-repeat top 130px center, url('../imgs/bt_1.png') no-repeat top / contain;
+    margin-top: 180px;
+    height: 320px;
+}
+.bt-decolagem span{bottom: 0;}
+.bt-decolagem:hover{background: url('../imgs/bastao_curto.png') no-repeat top 130px center, url('../imgs/bt_1_hover.png') no-repeat top / contain;}
+.bt-decolagem.visitado{background: url('../imgs/bastao_curto.png') no-repeat top 130px center, url('../imgs/bt_1_visualizado.png') no-repeat top / contain;}
+.bt-aspectos{
+    background: url('../imgs/bastao_comprido.png') no-repeat top 100px center, url('../imgs/bt_2.png') no-repeat bottom / contain;
+    height: 420px;
+    margin-top: 35px;
+}
+.bt-aspectos:hover{background: url('../imgs/bastao_comprido.png') no-repeat top 100px center, url('../imgs/bt_2_hover.png') no-repeat bottom / contain;}
+.bt-aspectos.visitado{background: url('../imgs/bastao_comprido.png') no-repeat top 100px center, url('../imgs/bt_2_visualizado.png') no-repeat bottom / contain;}
+.bt-acompanhamento{
+    background: url('../imgs/bastao_comprido.png') no-repeat top 135px center, url('../imgs/bt_3.png') no-repeat top / contain;
+    height: 415px;
+    margin-top: 90px;
+}
+.bt-acompanhamento span{bottom: 0;}
+.bt-acompanhamento:hover{background: url('../imgs/bastao_comprido.png') no-repeat top 135px center, url('../imgs/bt_3_hover.png') no-repeat top / contain;}
+.bt-acompanhamento.visitado{background: url('../imgs/bastao_comprido.png') no-repeat top 135px center, url('../imgs/bt_3_visualizado.png') no-repeat top / contain;}
+.bt-execucao{
+    background: url('../imgs/bastao_comprido.png') no-repeat top 75px center, url('../imgs/bt_4.png') no-repeat bottom / contain;
+    height: 395px;
+    margin-top: 55px;
+}
+.bt-execucao:hover{background: url('../imgs/bastao_comprido.png') no-repeat top 75px center, url('../imgs/bt_4_hover.png') no-repeat bottom / contain;}
+.bt-execucao.visitado{background: url('../imgs/bastao_comprido.png') no-repeat top 75px center, url('../imgs/bt_4_visualizado.png') no-repeat bottom / contain;}
+.menu a.bt-glossario{
+    background: url('../imgs/bastao_comprido.png') no-repeat top 135px center, url('../imgs/bt_5.png') no-repeat top / contain;
+    height: 460px;
+    margin-top: 70px;
+    width: 245px;
+}
+.menu a.bt-glossario:hover{background: url('../imgs/bastao_comprido.png') no-repeat top 135px center, url('../imgs/bt_5_hover.png') no-repeat top / contain;}
+.menu a.bt-glossario.visitado{background: url('../imgs/bastao_comprido.png') no-repeat top 135px center, url('../imgs/bt_5_visualizado.png') no-repeat top / contain;}
+.bt-glossario span{bottom: 0;}
+.bt-papel{
+    background: url('../imgs/bastao_comprido.png') no-repeat top 70px center, url('../imgs/bt_6.png') no-repeat bottom / contain;
+    height: 385px;
+    margin-top: 50px;
+}
+.bt-papel:hover{background: url('../imgs/bastao_comprido.png') no-repeat top 70px center, url('../imgs/bt_6_hover.png') no-repeat bottom / contain;}
+.bt-papel.visitado{background: url('../imgs/bastao_comprido.png') no-repeat top 70px center, url('../imgs/bt_6_visualizado.png') no-repeat bottom / contain;}
+.bt-referencias{
+    background: url('../imgs/bastao_curto.png') no-repeat top 130px center, url('../imgs/bt_7.png') no-repeat top / contain;
+    margin-top: 180px;
+    height: 270px;
+}
+.bt-referencias span{bottom: 0;}
+.bt-referencias:hover{background: url('../imgs/bastao_curto.png') no-repeat top 130px center, url('../imgs/bt_7_hover.png') no-repeat top / contain;}
+.bt-referencias.visitado{background: url('../imgs/bastao_curto.png') no-repeat top 130px center, url('../imgs/bt_7_visualizado.png') no-repeat top / contain;}
+
+@media screen and (max-width: 580px){
+    .menu{
+        background: none;
+        width: 100%;
+        height: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    .bt-decolagem{
+        background: url('../imgs/bastao_curto.png') no-repeat top 160px center, url('../imgs/bt_1.png') no-repeat top / contain;
+        margin-top: 40px;
+        height: 320px;
+    }
+    .bt-decolagem:hover{background: url('../imgs/bastao_curto.png') no-repeat top 160px center, url('../imgs/bt_1_hover.png') no-repeat top / contain;}
+    .bt-decolagem.visitado{background: url('../imgs/bastao_curto.png') no-repeat top 160px center, url('../imgs/bt_1_visualizado.png') no-repeat top / contain;}
+    .bt-aspectos{
+        background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_2.png') no-repeat top / contain;
+        height: 360px;
+        margin-top: 40px;
+    }
+    .bt-aspectos:hover{background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_2_hover.png') no-repeat top / contain;}
+    .bt-aspectos.visitado{background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_2_visualizado.png') no-repeat top / contain;}
+    .bt-aspectos span{bottom: 0;}
+    .bt-acompanhamento{
+        background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_3.png') no-repeat top / contain;
+        height: 362px;
+        margin-top: 40px;
+    }
+    .bt-acompanhamento span{bottom: 0;}
+    .bt-acompanhamento:hover{background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_3_hover.png') no-repeat top / contain;}
+    .bt-acompanhamento.visitado{background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_3_visualizado.png') no-repeat top / contain;}
+    .bt-execucao{
+        background: url('../imgs/bastao_curto.png') no-repeat top 180px center, url('../imgs/bt_4.png') no-repeat top / contain;
+        height: 320px;
+        margin-top: 40px;
+    }
+    .bt-execucao span{bottom: 0;}
+    .bt-execucao:hover{background: url('../imgs/bastao_curto.png') no-repeat top 180px center, url('../imgs/bt_4_hover.png') no-repeat top / contain;}
+    .bt-execucao.visitado{background: url('../imgs/bastao_curto.png') no-repeat top 180px center, url('../imgs/bt_4_visualizado.png') no-repeat top / contain;}
+    .menu a.bt-glossario{
+        background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_5.png') no-repeat top / contain;
+        height: 385px;
+        margin-top: 40px;
+        width: 220px;
+    }
+    .menu a.bt-glossario:hover{background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_5_hover.png') no-repeat top / contain;}
+    .menu a.bt-glossario.visitado{background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_5_visualizado.png') no-repeat top / contain;}
+    .bt-papel{
+        background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_6.png') no-repeat top / contain;
+        height: 310px;
+        margin-top: 40px;
+    }
+    .bt-papel span{bottom: 0;}
+    .bt-papel:hover{background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_6_hover.png') no-repeat top / contain;}
+    .bt-papel.visitado{background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_6_visualizado.png') no-repeat top / contain;}
+    .bt-referencias{
+        background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_7.png') no-repeat top / contain;
+        margin-top: 40px;
+        height: 310px;
+    }
+    .bt-referencias span{bottom: 0;}
+    .bt-referencias:hover{background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_7_hover.png') no-repeat top / contain;}
+    .bt-referencias.visitado{background: url('../imgs/bastao_curto.png') no-repeat top 170px center, url('../imgs/bt_7_visualizado.png') no-repeat top / contain;}
+}

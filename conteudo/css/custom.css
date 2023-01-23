@@ -1,0 +1,35 @@
+
+.podcast-container {
+    width: 809px;
+    height: 265px;
+    background-image: url('../img/podcast_bg.png');
+    margin: 50px auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sesc-audio-player {
+    width: 200px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-left: -35px;
+}
+.sesc-audio-player .botoes {
+    text-align: center;
+}
+.sesc-audio-player input[type="range"] {
+    border-radius: 5px;
+}
+.sesc-audio-player .timestamp {
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-left: unset;
+}
+.tela-inicial {
+    background-image: url(../img/bt-telainicial.png);
+    width: 174px;
+    height: 56px;
+    display: block;
+    margin: -20px auto 40px auto;
+}

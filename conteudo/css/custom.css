@@ -1,19 +1,17 @@
 
+/*página 1*/
 h2{
     color: #2d5054;
     font-weight: bold;
     margin-bottom: 30px;
 }
-#booklet{position: relative;}
-.podcast-container {
-    width: 809px;
-    height: 265px;
-    background-image: url('../img/podcast_bg.png');
-    margin: 50px auto 30px auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+h3{
+    color: #e79623;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
+.container{background: transparent;}
+#booklet{position: relative;}
 .sesc-audio-player {
     width: 200px;
     background-color: transparent;
@@ -88,7 +86,149 @@ h2{
 .pagination li:nth-child(6) a:hover, .pagination li.active:nth-child(6) a{background: url('../img/6_hover.png') no-repeat;}
 .pagination li:nth-child(7) a{background: url('../img/7.png') no-repeat;}
 .pagination li:nth-child(7) a:hover, .pagination li.active:nth-child(7) a{background: url('../img/7_hover.png') no-repeat;}
+/*página 1*/
 
+/*página 2*/
+.bloco-escuro{
+    background: #498189;
+    padding: 90px 0;
+    position: relative;
+}
+.bloco-escuro h2, .bloco-escuro p, .bloco-escuro li{color: #fff;}
+.ico-destaque{
+    background: url('../img/ico_destaque.png') no-repeat left top;
+    padding-left: 140px;
+    min-height: 130px;
+    margin-left: -80px;
+}
+.bloco-claro{
+    background: url('../img/background.png') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 90px 0;
+    position: relative;
+}
+.bloco-claro h3{color: #498189;}
+.infografico1{
+    max-width: 1260px;
+    margin: 50px auto;
+}
+.bt-tooltip{
+    font-weight: bold;
+    color: #e79623;
+    border: none;
+    background: transparent;
+}
+.borda-pontilhada{
+    border: 3px dashed #fff;
+    background: #2d5054;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 10px;
+    padding-bottom: 0;
+}
+ul.check{padding-left: 0;}
+ul.check li{
+    list-style: none;
+    background: url('../img/check.png') no-repeat left top;
+    padding-left: 40px;
+    min-height: 30px;
+    margin-bottom: 10px;
+}
+.ilustra-esquerda{
+    margin-left: -80%;
+}
+.painel1{
+    max-width: 1260px;
+    margin: 50px auto;
+}
+.bt-painel1{
+    width: 278px;
+    height: 327px;
+    margin-bottom: 30px;
+    border: none;
+    transition: all .4s;
+}
+.bt-painel1:hover{transform: scale(1.1);}
+.bt-local{background: url('../img/bt_1_hover_scale.png') no-repeat;}
+.bt-equipe{background: url('../img/bt_2_hover_scale.png') no-repeat;}
+.bt-materiais{background: url('../img/bt_3_hover_scale.png') no-repeat;}
+.bt-fornecedores{background: url('../img/bt_4_hover_scale.png') no-repeat;}
+.bt-prestacao{background: url('../img/bt_5_hover_scale.png') no-repeat;}
+.bt-marketing{background: url('../img/bt_6_hover_scale.png') no-repeat;}
+.bt-acompanhamento{background: url('../img/bt_7_hover_scale.png') no-repeat;}
+.bt-desmontagem{background: url('../img/bt_8_hover_scale.png') no-repeat;}
+.bloco-escuro .modal p{color: #333;}
+
+.icone.se-liga::before{
+    background: url('../img/ico_seliga.png') no-repeat left top #fff;
+    width: 139px;
+    height: 176px;
+    top: -45px;
+    left: -85px;
+}
+.bloco-escuro .caixa.destaque{
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 70px;
+}
+.bloco-escuro .caixa.destaque p{
+    color: #498189;
+    margin-bottom: 0;
+}
+.icone.check::before{
+    background: url('../img/check_final.png') no-repeat left top transparent;
+    background-size: contain;
+    width: 130px;
+    height: 130px;
+    top: -15px;
+    left: -60px;
+}
+.footer-pg2{
+    background: #498189;
+    margin-top: -1px;
+}
+.footer-com-avancar{
+    width: 400px;
+    margin: 0 auto;
+}
+.rellax{
+    position: absolute;
+    width: 20%;
+}
+.rellax.direita{right: 0;}
+.rellax.esquerda{left: 0;}
+.rellax1{top: 1100px;}
+.rellax2{top: 1450px;}
+.rellax3{top: 2000px;}
+.rellax4{top: 600px;}
+.rellax5{
+    top: 1200px;
+    width: 15%;
+}
+.rellax6{top: 850px;}
+.rellax7{top: 1500px;}
+.rellax8{top: 1000px;}
+.rellax9{
+    top: 3200px;
+    width: 15%;
+}
+/*página 2*/
+
+/*página 3*/
+
+
+/*página 3*/
+
+/*media queries*/
+@media screen and (max-width: 1024px){
+    .ico-destaque{margin-left: 0;}
+    .ilustra-esquerda{
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
 @media screen and (max-width: 890px){
     .abaixo{margin-top: 0;}
     .footer-inicial{

@@ -847,5 +847,5 @@ iframe, iframe.youtube-pl{
   display: none;
 }
 
-
+.modal-fullscreen .modal-content{height: auto !important;}
 

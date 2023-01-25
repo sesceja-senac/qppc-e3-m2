@@ -14,6 +14,7 @@ $(function () {
 
   if (window.location.search == '?page=2') { $('footer').addClass('footer-pg2'); }
   if (window.location.search == '?page=3') { $('footer').addClass('footer-pg3'); }
+  if (window.location.search == '?page=4') { $('footer').addClass('footer-pg4'); }
 
   $('.bt-tablet').click(function(){
     $(this).addClass('visitado');

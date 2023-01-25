@@ -219,6 +219,7 @@ ul.check li{
 /*página 3*/
 .pagina3 .bloco-escuro{background: #487f6b;}
 .pagina3 .bloco-escuro h4{color: #fff;}
+.pagina3 .bloco-claro{background-image: url('../img/background2.png')}
 .pg3-ilustra1{margin-left: -180px;}
 .painel-tablet{
     background: url('../img/ipad.png') no-repeat;
@@ -264,12 +265,14 @@ ul.check li{
     margin: auto;
     margin-right: 0;
 }
-.pagina3 .bg-parallax{
+.bg-parallax{
     width: 100%;
-    height: 300px;
-    background: url('../img/paralaxe.png') no-repeat center;
+    height: 440px;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+.parallax1{background: url('../img/paralaxe.png') no-repeat center;}
 .pagina3 .caixa.ilustra2{
     background: #487f6b;
     border: none;
@@ -286,8 +289,69 @@ ul.check li{
     right: -100px;
     top: -50px;
 }
-.footer-pg3{background: #f4f3f3;}
 /*página 3*/
+
+/*página 4*/
+.pagina3 .bloco-claro{background-image: url('../img/background3.png')}
+.parallax2{background-image: url('../img/paralaxe_1.png');}
+.pagina4 .caixa{
+    background: #5da5b1;
+    border: none;
+    border-radius: 13px;
+    padding: 20px;
+    padding-left: 40px;
+}
+.pagina4 .caixa p{color: #fff;}
+.pagina4 .caixa.importante::before{
+    background: url('../img/ico_importante.png') no-repeat center transparent;
+    width: 127px;
+    height: 159px;
+    left: -95px;
+    top: -25px;
+}
+.parallax3{background-image: url('../img/paralaxe_2.png');}
+.img-exemplo{
+    margin-bottom: -200px;
+}
+.pagina4 h2{color: #487f6b;}
+.pagina4 .caixa.destaque{
+    background: #2d5054;
+    padding-right: 240px;
+    padding-left: 20px;
+}
+.pagina4 .caixa.destaque p{color: #fff;}
+.pagina4 .caixa.destaque::before{
+    background: url('../img/destaque.png') no-repeat;
+    width: 290px;
+    height: 260px;
+    right: -60px;
+    top: -70px;
+    left: unset;
+    background-size: contain;
+}
+.pagina4 .bloco-escuro .caixa{background: #2d5054;}
+.pagina4 .caixa.importante{padding-left: 50px;}
+.pagina4 .caixa.atencao{padding-left: 50px;}
+.pagina4 .caixa.importante::before{
+    top: -75px;
+    left: -70px;
+}
+.pagina4 .caixa.atencao::before{
+    background: url('../img/ico_atencao.png') no-repeat center transparent;
+    width: 127px;
+    height: 159px;
+    left: -70px;
+    top: -75px;
+}
+.footer-pg4{
+    background: #498189;
+    margin-top: -1px;
+}
+.pagina4 .bloco-escuro .painel-gaitinha .accordion-body{
+    background: #fff;
+}
+.bloco-escuro .painel-gaitinha p{color: #333;}
+/*página 4*/
 
 /*media queries*/
 @media screen and (max-width: 1024px){
@@ -312,6 +376,21 @@ ul.check li{
         right: 0;
         top: -65px;
     }
+    .footer-pg3{background: #f4f3f3;}
+    .pagina4 .caixa.importante{
+        width: 85%;
+        margin: 50px auto;
+        margin-top: 100px;
+    }
+    .pagina4 .bloco-escuro .caixa{
+        width: 85%;
+        margin-top: 80px;
+    }
+    .pagina4 .bloco-escuro .caixa{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media screen and (max-width: 580px){
     .pagina1 .container{
@@ -321,5 +400,12 @@ ul.check li{
     .footer-inicial {
         left: 30px !important;
         bottom: 70px !important;
+    }
+    .pagina4 .bloco-escuro .caixa.destaque{
+        padding-right: 0;
+        padding-top: 190px;
+    }
+    .pagina4 .caixa.destaque::before{
+        right: 10px;
     }
 }

@@ -109,10 +109,7 @@ h3{
     position: relative;
 }
 .bloco-claro h3{color: #498189;}
-.infografico1{
-    max-width: 1260px;
-    margin: 50px auto;
-}
+.infografico1{max-width: 1260px;}
 .bt-tooltip{
     font-weight: bold;
     color: #e79623;
@@ -214,6 +211,7 @@ ul.check li{
     top: 3200px;
     width: 15%;
 }
+
 /*página 2*/
 
 /*página 3*/
@@ -353,6 +351,112 @@ ul.check li{
 .bloco-escuro .painel-gaitinha p{color: #333;}
 /*página 4*/
 
+/*página 5*/
+.pagina5 .bloco-claro{background-image: url('../img/background4.png');}
+.pagina5 .bloco-escuro{background: #2d5054;}
+.pagina5 .primeiro{padding-top: 0;}
+.pagina5 h2{color: #487f6b;}
+.download-glossario{
+    background: url('../img/bt_download_glossario.png') no-repeat;
+    width: 269px;
+    height: 263px;
+}
+.download-glossario:hover{background: url('../img/bt_download_glossario_hover.png') no-repeat;}
+
+.letra{
+    min-height: 67px;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.letra-a{background: url('../img/letra_A.png') no-repeat left top;}
+.letra-b{background: url('../img/letra_B.png') no-repeat left top;}
+.letra-c{background: url('../img/letra_C.png') no-repeat left top;}
+.letra-d{background: url('../img/letra_D.png') no-repeat left top;}
+.letra-f{background: url('../img/letra_F.png') no-repeat left top;}
+.letra-g{background: url('../img/letra_G.png') no-repeat left top;}
+.letra-i{background: url('../img/letra_I.png') no-repeat left top;}
+.letra-l{background: url('../img/letra_L.png') no-repeat left top;}
+.letra-m{background: url('../img/letra_M.png') no-repeat left top;}
+.letra-o{background: url('../img/letra_O.png') no-repeat left top;}
+.letra-p{background: url('../img/letra_P.png') no-repeat left top;}
+.letra-q{background: url('../img/letra_Q.png') no-repeat left top;}
+.letra-r{background: url('../img/letra_R.png') no-repeat left top;}
+.letra-s{background: url('../img/letra_S.png') no-repeat left top;}
+.letra-t{background: url('../img/letra_T.png') no-repeat left top;}
+.letra-v{background: url('../img/letra_V.png') no-repeat left top;}
+
+.glossario .accordion-item.claro{background: #498189;}
+.glossario .accordion-item.escuro{background: #2d5054;}
+.glossario .accordion-item:hover img{transform: scale(1.1);}
+.glossario .accordion-item{
+    border: none;
+    transition: all .4s;
+}
+.glossario .accordion-button:not(.collapsed), .accordion-button:focus, .accordion-button{
+    background: transparent;
+    box-shadow: unset;
+    border: none;
+    padding: 25px 0px;
+}
+.glossario .accordion-button::after, .glossario .accordion-button::before{display: none;}
+.glossario .accordion-body{padding-left: 60px;}
+.ilustra-modelo{
+    margin-left: -80px;
+    margin-top: -30px;
+}
+.pagina5 .caixa{
+    background: #498189;
+    padding: 10px;
+    border-radius: 30px;
+}
+.pagina5 .caixa p{color: #fff;}
+.pagina5 .caixa.atencao{padding-left: 50px;}
+.pagina5 .caixa.atencao::before{
+    background: url('../img/ico_atencao.png') no-repeat center transparent;
+    width: 127px;
+    height: 159px;
+    left: -70px;
+    top: -10px;
+}
+.bloco-azul{
+    background: #5da5b1;
+    padding: 90px 0;
+    position: relative;
+}
+.bloco-azul p{color: #fff;}
+.pagina5 .bloco-azul .caixa.pensar{
+    background: #fff;
+    border: none;
+}
+.pagina5 .bloco-azul .caixa.pensar p{color: #5da5b1;}
+.pagina5 .bloco-azul .caixa.pensar{padding-left: 50px;}
+.pagina5 .bloco-azul .caixa.pensar::before{
+    background: url('../img/ico_pensar.png') no-repeat center transparent;
+    width: 127px;
+    height: 180px;
+    left: -80px;
+    top: -40px;
+}
+.footer-pg5{
+    background: #5da5b1;
+    margin-top: -1px;
+}
+.rellax10{
+    top: 100px;
+    width: 10%;
+}
+.rellax11{
+    top: 1000px;
+    width: 10%;
+}
+.rellax12{
+    top: 1000px;
+    width: 15%;
+}
+/*página 5*/
+
+
 /*media queries*/
 @media screen and (max-width: 1024px){
     .ico-destaque{margin-left: 0;}
@@ -386,10 +490,18 @@ ul.check li{
         width: 85%;
         margin-top: 80px;
     }
-    .pagina4 .bloco-escuro .caixa{
+    .pagina4 .bloco-escuro .caixa,
+    .pagina5 .caixa.atencao,
+    .pagina5 .bloco-azul .caixa.pensar{
         width: 85%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .download-glossario{margin: 30px auto;}
+    .ilustra-modelo{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
 @media screen and (max-width: 580px){
@@ -407,5 +519,13 @@ ul.check li{
     }
     .pagina4 .caixa.destaque::before{
         right: 10px;
+    }
+    .pagina5 .bloco-azul .caixa.pensar{
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+    .pagina5 .bloco-azul .caixa.pensar::before{
+        top: -120px;
+        left: 80px;
     }
 }

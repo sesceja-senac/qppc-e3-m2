@@ -12,13 +12,34 @@ $(function () {
       });
   }
 
-  if (window.location.search == '?page=2') { $('footer').addClass('footer-pg2'); }
-  if (window.location.search == '?page=3') { $('footer').addClass('footer-pg3'); }
-  if (window.location.search == '?page=4') { $('footer').addClass('footer-pg4'); }
-  if (window.location.search == '?page=5') { $('footer').addClass('footer-pg5'); }
-  if (window.location.search == '?page=6') { 
+  if ($('.pagina1').is(':visible')){
+    $('.bt-avancar').attr("href", "?page=2");
+  }
+  if ($('.pagina2').is(':visible')){
+    $('body').css('background-color','#498189');
+    $('.bt-avancar').attr("href", "?page=3");
+  }
+  if ($('.pagina3').is(':visible')){
+    $('header').css('background-color','#487f6b');
+    $('footer').css('background','url(img/background3.png)');
+    $('.bt-avancar').attr("href", "?page=4");
+  }
+  if ($('.pagina4').is(':visible')){
+    $('footer').css('background','#498189');
+    $('.bt-avancar').attr("href", "?page=5");
+  }
+  if ($('.pagina5').is(':visible')){
+    $('body').css('background','url(img/background4.png)');
+    $('footer').css('background','#5da5b1');
+    $('.bt-avancar').attr("href", "?page=6");
+  }
+  if ($('.pagina6').is(':visible')){
+    $('footer').css('background','#e79623');
+    $('.bt-avancar').attr("href", "?page=7");
+  }
+  if ($('.pagina7').is(':visible')){
+    $('body').css('background','url(img/bg-referencias.png)');
     $('.bt-avancar').hide();
-    $('footer').addClass('footer-pg6'); 
   }
 
   $('.bt-tablet').click(function(){

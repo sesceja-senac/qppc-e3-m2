@@ -182,10 +182,6 @@ ul.check li{
     top: -15px;
     left: -60px;
 }
-.footer-pg2{
-    background: #498189;
-    margin-top: -1px;
-}
 .footer-com-avancar{
     width: 400px;
     margin: 0 auto;
@@ -341,10 +337,6 @@ ul.check li{
     left: -70px;
     top: -75px;
 }
-.footer-pg4{
-    background: #498189;
-    margin-top: -1px;
-}
 .pagina4 .bloco-escuro .painel-gaitinha .accordion-body{
     background: #fff;
 }
@@ -352,7 +344,7 @@ ul.check li{
 /*página 4*/
 
 /*página 5*/
-.pagina5 .bloco-claro{background-image: url('../img/background4.png');}
+.pagina5 .bloco-claro{background: none;}
 .pagina5 .bloco-escuro{background: #2d5054;}
 .pagina5 .primeiro{padding-top: 0;}
 .pagina5 h2{color: #487f6b;}
@@ -504,6 +496,7 @@ ul.check li{
     top: 300px;
 }
 /*página 6*/
+
 
 
 /*media queries*/

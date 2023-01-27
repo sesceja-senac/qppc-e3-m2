@@ -16,6 +16,10 @@ $(function () {
   if (window.location.search == '?page=3') { $('footer').addClass('footer-pg3'); }
   if (window.location.search == '?page=4') { $('footer').addClass('footer-pg4'); }
   if (window.location.search == '?page=5') { $('footer').addClass('footer-pg5'); }
+  if (window.location.search == '?page=6') { 
+    $('.bt-avancar').hide();
+    $('footer').addClass('footer-pg6'); 
+  }
 
   $('.bt-tablet').click(function(){
     $(this).addClass('visitado');

@@ -456,6 +456,55 @@ ul.check li{
 }
 /*página 5*/
 
+/*página 6*/
+.bloco-amarelo{
+    background: #e79623;
+    padding: 90px 0;
+    position: relative;
+}
+.pg6-img1{
+    margin-bottom: -200px;
+    z-index: 9;
+    position: relative;
+}
+.bloco-amarelo.primeiro{
+    padding-top: 250px;
+}
+.pagina6 .caixa.lembrar{
+    background: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.pagina6 .caixa.lembrar p{color: #333;}
+.pagina6 .caixa.lembrar{padding-left: 50px;}
+.pagina6 .caixa.lembrar::before{
+    background: url('../img/ico_lembrar.png') no-repeat center transparent;
+    width: 140px;
+    height: 182px;
+    left: -80px;
+    top: -40px;
+}
+.bloco-amarelo .figure-caption{color: #fff;}
+.bloco-amarelo.final{
+    min-height: 710px;
+    margin-top: 100px;
+}
+.pagina6 .img-final{
+    position: absolute;
+    left: -15%;
+    bottom: 0;
+}
+.footer-pg6{
+    margin-top: -1px;
+    background: #e79623;
+}
+.rellax13{
+    top: 300px;
+}
+/*página 6*/
+
 
 /*media queries*/
 @media screen and (max-width: 1024px){
@@ -503,6 +552,12 @@ ul.check li{
         margin-right: auto;
         display: block;
     }
+    .pagina6 .caixa.lembrar{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bloco-amarelo.final{min-height: auto;}
 }
 @media screen and (max-width: 580px){
     .pagina1 .container{

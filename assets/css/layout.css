@@ -616,7 +616,7 @@ h3, .subtitulo{
     border-radius: 0;
 }
 .modal-dialog:not(.modal-fullscreen) .btn-close{
-    background: transparent;
+    /* background: transparent; */
     color: white;
     font-size: 1.5rem;
     line-height: 0;

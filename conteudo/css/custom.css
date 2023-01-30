@@ -89,6 +89,12 @@ h3{
 /*página 1*/
 
 /*página 2*/
+.bg-podcast{
+    background: url('../img/podcast.png') no-repeat;
+    max-width: 811px;
+    height: 268px;
+    background-size: contain;
+}
 .bloco-escuro{
     background: #498189;
     padding: 90px 0;
@@ -141,7 +147,7 @@ ul.check li{
 }
 .bt-painel1{
     width: 278px;
-    height: 327px;
+    height: 350px;
     margin-bottom: 30px;
     border: none;
     transition: all .4s;
@@ -208,6 +214,8 @@ ul.check li{
     width: 15%;
 }
 
+.pagina2 .painel-gaitinha .accordion-item{margin-bottom: 20px;}
+.pagina2 .painel-gaitinha .accordion-button{margin-bottom: 0;}
 /*página 2*/
 
 /*página 3*/
@@ -286,6 +294,7 @@ ul.check li{
 /*página 3*/
 
 /*página 4*/
+.mesma-altura{ min-height: 210px;}
 .pagina3 .bloco-claro{background-image: url('../img/background3.png')}
 .parallax2{background-image: url('../img/paralaxe_1.png');}
 .pagina4 .caixa{
@@ -294,6 +303,7 @@ ul.check li{
     border-radius: 13px;
     padding: 20px;
     padding-left: 40px;
+    margin-top: 80px;
 }
 .pagina4 .caixa p{color: #fff;}
 .pagina4 .caixa.importante::before{
@@ -345,7 +355,6 @@ ul.check li{
 
 /*página 5*/
 .pagina5 .bloco-claro{background: none;}
-.pagina5 .bloco-escuro{background: #2d5054;}
 .pagina5 .primeiro{padding-top: 0;}
 .pagina5 h2{color: #487f6b;}
 .download-glossario{
@@ -365,6 +374,7 @@ ul.check li{
 .letra-b{background: url('../img/letra_B.png') no-repeat left top;}
 .letra-c{background: url('../img/letra_C.png') no-repeat left top;}
 .letra-d{background: url('../img/letra_D.png') no-repeat left top;}
+.letra-e{background: url('../img/letra_E.png') no-repeat left top;}
 .letra-f{background: url('../img/letra_F.png') no-repeat left top;}
 .letra-g{background: url('../img/letra_G.png') no-repeat left top;}
 .letra-i{background: url('../img/letra_I.png') no-repeat left top;}
@@ -409,7 +419,7 @@ ul.check li{
     width: 127px;
     height: 159px;
     left: -70px;
-    top: -10px;
+    top: -30px;
 }
 .bloco-azul{
     background: #5da5b1;

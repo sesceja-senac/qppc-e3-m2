@@ -10,6 +10,7 @@ h3{
     font-weight: bold;
     font-size: 1.5rem;
 }
+p{word-wrap: break-word;}
 .container{background: transparent;}
 #booklet{position: relative;}
 .sesc-audio-player {
@@ -72,6 +73,7 @@ h3{
     border: none;
     text-indent: -100em;
 }
+.pagination li.visitado a{opacity: .3;}
 .pagination li:first-child a{background: url('../img/1.png') no-repeat;}
 .pagination li:first-child a:hover, .pagination li.active:first-child a{background: url('../img/1_hover.png') no-repeat;}
 .pagination li:nth-child(2) a{background: url('../img/2.png') no-repeat;}
@@ -510,6 +512,13 @@ ul.check li{
 
 
 /*media queries*/
+@media screen and (max-width: 1400px) and (min-width: 992px){
+    .bloco-amarelo.final{min-height: 500px;}
+    .pagina6 .img-final{
+        width: 43%;
+        top: -5%;
+    }
+}
 @media screen and (max-width: 1024px){
     .ico-destaque{margin-left: 0;}
     .ilustra-esquerda{
@@ -561,8 +570,22 @@ ul.check li{
         margin-right: auto;
     }
     .bloco-amarelo.final{min-height: auto;}
+    .pg2-ilustra1{max-width: 100%;}
+    .pagina2 .modal .icone.se-liga{
+        margin-top: 100px;
+        padding-left: 40px;
+        padding-top: 100px;
+    }
+    .pagina2 .modal .icone.se-liga::before{
+        top: -85px;
+        left: 30%;
+    }
 }
 @media screen and (max-width: 580px){
+    .painel-tablet{
+        transform: scale(0.7) !important;
+        margin: -30% !important;
+    }
     .pagina1 .container{
         padding-left: 30px;
         padding-right: 30px;
@@ -586,4 +609,7 @@ ul.check li{
         top: -120px;
         left: 80px;
     }
+    .modal .accordion-button:not(.collapsed)::before,
+    .modal .painel-gaitinha .accordion-button:before{width: 30px;}
+    .pagina2 .modal .accordion-header i{margin-left: -5px;}
 }

@@ -144,8 +144,8 @@
   .pagina h1	{
   display: block;
   font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;	
@@ -153,8 +153,8 @@
   .pagina h2	{
   display: block;
   font-size: 1.5em;
-  margin-top: 0.83em;
-  margin-bottom: 0.83em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;	
@@ -170,8 +170,8 @@
   }	
   .pagina h4	{
   display: block;
-  margin-top: 1.33em;
-  margin-bottom: 1.33em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
@@ -179,8 +179,8 @@
   .pagina h5	{
   display: block;
   font-size: .83em;
-  margin-top: 1.67em;
-  margin-bottom: 1.67em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
@@ -188,8 +188,8 @@
   .pagina h6{
   display: block;
   font-size: .67em;
-  margin-top: 2.33em;
-  margin-bottom: 2.33em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;	
@@ -354,7 +354,7 @@
   display: table;
   border-collapse: separate;
   border-spacing: 2px;
-  border-color: gray;	
+  border: 1px solid gray !important;	
   }
   .pagina tbody{
   display: table-row-group;
@@ -364,6 +364,7 @@
   .pagina td{
   display: table-cell;
   vertical-align: inherit;
+  border: 1px solid gray !important;	
   }	
   
   .pagina tfoot{
@@ -372,10 +373,11 @@
   border-color: inherit;	
   }
   th	{
-    display: table-cell;
+    display: table-cell !important;
   vertical-align: inherit;
   font-weight: bold;
   text-align: center;	
+  border: 1px solid gray !important;	
   }
   .pagina thead{
   display: table-header-group;
@@ -390,6 +392,7 @@
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
+
   }	
     
   .pagina u{
@@ -399,7 +402,7 @@
   display: block;
   list-style-type: disc;
   margin-top: 1em;
-  margin-bottom: 1 em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   padding-left: 40px;	
@@ -407,7 +410,6 @@
   .pagina var	{
   font-style: italic;
   }
-
 
 /* Estilos de acordo com o template + ou - */
 .img-fluid{
@@ -428,6 +430,9 @@
   margin: 1.2rem 0;
   font-family: 'Libre Franklin Bold';
   color: black;
+  page-break-inside: auto !important;
+  page-break-after: auto !important;
+  page-break-before: auto !important;
  }
  
 
@@ -506,7 +511,7 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
-  padding-top: 60px;
+  padding-top: 40px;
   margin-bottom: 40px;
   }
 
@@ -530,8 +535,8 @@ p{
 }
 
 h4{
-	margin-top:1.5em;
-	margin-bottom:2.5em;
+	margin-top:.5em;
+	margin-bottom:.5em;
 }
 ul,ol{
 	font-size:1.2em;
@@ -763,13 +768,13 @@ p{
    max-width: 100%;
 }
 /*accordion*/
-.accordion .accordion-collapse{
+/* .accordion .accordion-collapse{
    height: initial;
    display: block;
 }
 .accordion-item{
    page-break-inside: avoid;
-}
+} */
 
 /*carousel*/
 .carousel{
@@ -841,7 +846,7 @@ iframe, iframe.youtube-pl{
   align-items: unset !important;
   min-height: auto !important;
   transform: none !important;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
 }
 .modal-header button{
   display: none;

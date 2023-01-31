@@ -42,6 +42,8 @@ $(function () {
     $('.bt-avancar').hide();
   }
 
+  $('footer li.active').prevAll("li").addClass("visitado");
+
   $('.bt-tablet').click(function(){
     $(this).addClass('visitado');
   });

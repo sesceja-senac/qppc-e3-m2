@@ -100,7 +100,7 @@ font-weight: 700;
 
     @page {
         size: A4;
-        margin-top: 3cm;
+        margin-top: 2cm;
         margin-bottom: 2cm;
         margin-right: 2cm;
         margin-left: 3cm;
@@ -132,9 +132,9 @@ font-weight: 700;
       a[href]:after {
         content: " (" attr(href) ")";
       }
-      a[data-toggle='collapse']:after {
+      /* a[data-toggle='collapse']:after {
         content: "";
-      }
+      } */
     
 
 
@@ -178,14 +178,16 @@ h6, h6.visually-hidden{
   font-family: 'Libre Franklin Regular' !important
 }
 h1,h2,h3,h4,h5,h6{
-    margin: 1.2rem 0;
     font-family: 'Libre Franklin Bold';
     color: black;
+    page-break-inside: auto !important;
+    page-break-after: auto !important;
+    page-break-before: auto !important;
 }
 p{
     font-size: 12pt;
-    color: black
-};
+    color: black;
+}
 
 .container{
     max-width: unset;
@@ -201,10 +203,7 @@ p{
   .caixa, .caixa.icone{
     border: 2px dashed grey;
     padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: .5rem;
-    margin-right: .5rem;    
+    margin: .5rem; 
   }
 
   /*
@@ -233,6 +232,20 @@ p{
     border: 0!important;
   }
 
+
+.bt-tooltip{text-decoration: underline !important;}
+
+.pagina1 .container{padding-bottom: 0 !important;}
+.bloco-escuro{padding: 0 !important;}
+
+.pagina{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.linha-destaque td{text-decoration: underline !important;}
+
+
 /*paindel de abas*/
   .painel-abas .tab-content{
       border: 0;
@@ -257,16 +270,16 @@ p{
       border: 2px solid;
       page-break-inside: avoid;
       line-height: 1.2;
-      margin: 1.2rem 0;
+      margin: .5rem 0;
       width: 100%;
   }
 /*accordion*/
   .accordion .accordion-collapse{
-      height: initial;
+      height: initial !important;
       display: block;
   }
-  .accordion-item{
-      page-break-inside: avoid;
+  .accordion-item, .accordion-item h2{
+      page-break-inside: auto !important;
   }
 
   /*carousel*/
@@ -331,8 +344,8 @@ p{
       transition: none;
       width: auto;
       margin: 0;
-      margin-top: 5rem;
-      margin-bottom: 0rem;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
   }
   .modal-dialog .modal-header .btn-close{
       display: none;
@@ -377,7 +390,7 @@ p{
 
 .modal-dialog.modal-fullscreen{
   padding: 0;
-  margin-top: 2rem;  
+  margin-top: .5rem;  
   transform: none;
 }
 .modal-dialog.modal-fullscreen .container{

@@ -458,6 +458,51 @@ ul.check li{
     top: 1000px;
     width: 15%;
 }
+.painel-contrato{
+    background: url('../img/painel-contrato.png') no-repeat;
+    width: 985px;
+    height: 1283px;
+    position: relative;
+}
+.painel-contrato .lupa{
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: -15px;
+    transition: all .4s;
+    cursor: pointer;
+}
+.painel-contrato .lupa:hover{
+    width: 600px;
+}
+.lupa.bt-contratante{
+    background: url('../img/figura_4_ico_detalhes.png') no-repeat left center, url('../img/figura_4_modal1.png') no-repeat left 85px center;
+    top: 215px;
+}
+.lupa.bt-termos{
+    background: url('../img/figura_4_ico_detalhes.png') no-repeat left center, url('../img/figura_4_modal2.png') no-repeat left 85px center;
+    top: 295px;
+}
+.lupa.bt-contratado{
+    background: url('../img/figura_4_ico_detalhes.png') no-repeat left center, url('../img/figura_4_modal3.png') no-repeat left 85px center;
+    top: 408px;
+}
+.lupa.bt-evento{
+    background: url('../img/figura_4_ico_detalhes.png') no-repeat left center, url('../img/figura_4_modal4.png') no-repeat left 85px center;
+    top: 488px;
+}
+.lupa.bt-valor{
+    background: url('../img/figura_4_ico_detalhes.png') no-repeat left center, url('../img/figura_4_modal5.png') no-repeat left 85px center;
+    top: 600px;
+}
+.lupa.bt-penalidades{
+    background: url('../img/figura_4_ico_detalhes.png') no-repeat left center, url('../img/figura_4_modal6.png') no-repeat left 85px center;
+    top: 732px;
+}
+.lupa.bt-assinatura{
+    background: url('../img/figura_4_ico_detalhes.png') no-repeat left center, url('../img/figura_4_modal7.png') no-repeat left 85px center;
+    bottom: 204px;
+}
 /*página 5*/
 
 /*página 6*/

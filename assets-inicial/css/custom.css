@@ -118,7 +118,11 @@ body{
 .bt-referencias:hover{background: url('../imgs/bastao_curto.png') no-repeat top 130px center, url('../imgs/bt_7_hover.png') no-repeat top / contain;}
 .bt-referencias.visitado{background: url('../imgs/bastao_curto.png') no-repeat top 130px center, url('../imgs/bt_7_visualizado.png') no-repeat top / contain;}
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 780px){
+    .topo{
+        align-items: center !important;
+        flex-direction: column;
+    }
     .menu{
         background: none;
         width: 100%;
@@ -127,6 +131,7 @@ body{
         justify-content: center;
         margin-bottom: 70px;
     }
+    .menu a{margin: 10px;}
     .bt-decolagem{
         background: url('../imgs/bastao_curto.png') no-repeat top 160px center, url('../imgs/bt_1.png') no-repeat top / contain;
         margin-top: 40px;

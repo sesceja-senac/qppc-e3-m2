@@ -117,12 +117,78 @@ p{word-wrap: break-word;}
     position: relative;
 }
 .bloco-claro h3{color: #498189;}
-.infografico1{max-width: 1260px;}
+.infografico1 {
+    padding-top: 40px;
+}
+.infografico1 .row {
+    max-width: 100%;
+}
+.card-infografico {
+    background-color: #CF8020;
+    display: block;
+    width: 400px;
+    padding: 25px 35px;
+    margin: 20px 40px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 5px #333;
+}
+.card-infografico p:nth-child(2) {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.card-infografico strong {
+    font-size: 18px;
+    line-height: 1.3rem;
+}
+.infografico-card-azul .row{
+    display: flex;
+    justify-content: center;
+}
+.card-azul {
+    display: block;
+    width: 300px;
+    border: 5px solid #2d5054;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 25px;
+    color: white;
+    font-weight: 600;
+    margin: 20px;
+}
+.card-azul p {
+    font-size: 17px;
+}
+.card-azul:nth-child(1) {
+    background-color: #498189;
+}
+.card-azul:nth-child(1)::before{background-image: url('../img/ajustes/card_1.png');}
+.card-azul:nth-child(2)::before{background-image: url('../img/ajustes/card_2.png');}
+.card-azul:nth-child(3)::before{background-image: url('../img/ajustes/card_3.png');}
+.card-azul::before {
+    content: '';    
+    background-size: contain;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+}
+.card-azul:nth-child(2) {
+    background-color: #3f6e72;
+}
+.card-azul:nth-child(3) {
+    background-color: #32585b;
+}
 .bt-tooltip{
-    font-weight: bold;
-    color: #e79623;
-    border: none;
-    background: transparent;
+    font-size: 17px;
+    border-bottom: 2px dashed #333;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+.bloco-escuro .bt-tooltip {
+    border-bottom: 2px dashed white;
 }
 .borda-pontilhada{
     border: 3px dashed #fff;
@@ -171,6 +237,10 @@ ul.check li{
     height: 176px;
     top: -45px;
     left: -85px;
+}
+.modal-body .icone.se-liga {
+    width: 70%;
+    margin: 60px auto 30px auto;
 }
 .bloco-escuro .caixa.destaque{
     background: #fff;
@@ -269,6 +339,9 @@ ul.check li{
     margin: auto;
     margin-right: 0;
 }
+.tablet-modais .modal-header img {
+    margin-right: 15px;
+}
 .bg-parallax{
     width: 100%;
     height: 440px;
@@ -288,10 +361,11 @@ ul.check li{
 .pagina3 .caixa.ilustra2::before{
     background: url('../img/ilustra_destaque2.png') no-repeat right center transparent;
     width: 343px;
-    height: 319px;
+    height: 300px;
+    background-size: contain;
     left: unset;
     right: -100px;
-    top: -50px;
+    top: -30px;
 }
 /*página 3*/
 
@@ -403,7 +477,19 @@ ul.check li{
     border: none;
     padding: 25px 0px;
 }
-.glossario .accordion-button::after, .glossario .accordion-button::before{display: none;}
+.glossario .accordion-button::after {display: none;}
+.glossario .accordion-button.collapsed::before, .glossario .accordion-button:not(.collapsed)::before{
+    right: 0;
+    left: unset;
+    position: absolute;
+}
+.glossario .accordion-button.collapsed::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url(../../assets/img/ico-mais.png) center center no-repeat, url(../../assets/img/quadrado.png);
+    margin-right: 10px;
+}
 .glossario .accordion-body{padding-left: 60px;}
 .ilustra-modelo{
     margin-left: -80px;
@@ -554,7 +640,69 @@ ul.check li{
 }
 /*página 6*/
 
-
+.caixa-por-exemplo {
+    background-color: #40767d;
+    color: white;
+    width: 425px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px #333;
+    display: block;
+    margin: 40px auto -40px auto;
+    position: relative;
+    z-index: 20;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.caixa-por-exemplo p {
+    font-size: 18px;
+    /* text-align: center; */
+}
+.caixa-por-exemplo h4 {
+    background-color: #366367;
+    width: 425px;
+    margin-left: -20px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 15;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.borda-branca {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    height: 95%;
+    width: 95%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+}
+.caixa-por-exemplo::before {
+    content: '';
+    background-image: url('../img/ajustes/ico_exemplo.png');
+    background-size: contain;
+    width: 84px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 21;
+}
+.caixa-por-exemplo::after {
+    content: '';
+    background-image: url('../img/ajustes/ico_exemplo2.png');
+    background-size: contain;
+    width: 247px;
+    height: 124px;
+    position: absolute;
+    bottom: -55px;
+    z-index: 22;
+    left: 54%;
+    transform: translateX(-50%);
+}
 
 /*media queries*/
 @media screen and (max-width: 1400px) and (min-width: 992px){
@@ -627,17 +775,22 @@ ul.check li{
     }
 }
 @media screen and (max-width: 580px){
+    .bloco-caro {
+        background-attachment: unset;
+    }
     .painel-tablet{
         transform: scale(0.7) !important;
-        margin: -30% !important;
+        margin: -40% !important;
+        background-position: center;
     }
     .pagina1 .container{
         padding-left: 30px;
         padding-right: 30px;
     }
     .footer-inicial {
-        left: 30px !important;
-        bottom: 70px !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        bottom: 40px !important;
     }
     .pagina4 .bloco-escuro .caixa.destaque{
         padding-right: 0;
@@ -657,4 +810,34 @@ ul.check li{
     .modal .accordion-button:not(.collapsed)::before,
     .modal .painel-gaitinha .accordion-button:before{width: 30px;}
     .pagina2 .modal .accordion-header i{margin-left: -5px;}
+    .footer-com-avancar {
+        width: 250px;
+        flex-wrap: wrap;
+    }
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icone.check::before {
+        left: -40px;
+        width: 110px;
+    }
+    .pagina4 .caixa.importante::before, 
+    .pagina4 .caixa.atencao::before, .pagina5 .caixa.atencao::before, .pagina6 .caixa.lembrar::before {
+        width: 100px;
+        background-size: contain;
+        left: -45px;
+    }
+    .card-infografico {
+        width: 325px;
+    }
+    .card-azul {
+        margin-top: 40px;
+    }
+    .caixa-por-exemplo {
+        width: 100%;
+    }
+    .caixa-por-exemplo h4 {
+        width: 100%;
+    }
 }

@@ -854,3 +854,9 @@ iframe, iframe.youtube-pl{
 
 .modal-fullscreen .modal-content{height: auto !important;}
 
+.tablet-modais .modal-header img {
+  display: none;
+}
+.collapse:not(.show) {
+  display: block;
+}

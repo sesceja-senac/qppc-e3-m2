@@ -47,5 +47,6 @@ $(function () {
   $('.bt-tablet').click(function(){
     $(this).addClass('visitado');
   });
-
+  
+  
 });

@@ -117,8 +117,15 @@ $(function () {
     function fimdejogo() {
         if (fim_de_jogo >= 13) {
             $("#fim_de_jogo").removeClass("d-none")
+            $('#fechar-bt').click(function(){
+                window.setTimeout(function(){
+                    $('#feedback_final').modal("show")
+                }, 1000)
+            })
+            
         }
     }
+
 
     // Mantem todas as opções aleatórias para cada F5
     randomizeResp(50);

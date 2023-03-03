@@ -778,7 +778,13 @@ ul.check li{
     }
 }
 @media screen and (max-width: 580px){
-    
+    .painel-tablet {
+        width: auto;
+    }
+    .bt-tablet {
+        width: 70%;
+        margin-left: 5%;
+    }
 .videos-tabela{
     margin-top: -90px;
 }
@@ -792,7 +798,7 @@ ul.check li{
     }
     .painel-tablet{
         transform: scale(0.7) !important;
-        margin: -40% !important;
+        margin: -30% !important;
         background-position: center;
     }
     .pagina1 .container{

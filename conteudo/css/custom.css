@@ -655,6 +655,9 @@ ul.check li{
 }
 .caixa-por-exemplo p {
     font-size: 18px;
+    z-index: 100 !important;
+    display: block;
+    position: relative;
     /* text-align: center; */
 }
 .caixa-por-exemplo h4 {

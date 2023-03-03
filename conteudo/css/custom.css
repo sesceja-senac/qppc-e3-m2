@@ -368,7 +368,6 @@ ul.check li{
     top: -45px;
 }
 /*página 3*/
-
 /*página 4*/
 .mesma-altura{ min-height: 210px;}
 .pagina3 .bloco-claro{background-image: url('../img/background3.png')}
@@ -720,6 +719,10 @@ ul.check li{
     }
 }
 @media screen and (max-width: 890px){
+    
+.videos-tabela{
+    margin-top: -70px;
+}
     .abaixo{margin-top: 0;}
     .footer-inicial{
         right: unset !important;
@@ -775,6 +778,15 @@ ul.check li{
     }
 }
 @media screen and (max-width: 580px){
+    
+.videos-tabela{
+    margin-top: -90px;
+}
+.videos-tabela iframe{
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+}
     .bloco-caro {
         background-attachment: unset;
     }

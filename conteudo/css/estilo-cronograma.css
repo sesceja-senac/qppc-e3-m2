@@ -78,6 +78,6 @@
 
 .erroou {
   text-transform: uppercase !important;
-  background-color: #cc4d4d;
+  background-color: #cc4d4d !important;
   color: white;
 }

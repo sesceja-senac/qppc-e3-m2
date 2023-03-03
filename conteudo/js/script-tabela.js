@@ -18,12 +18,16 @@ $(function () {
 
         // testa se o data-resp do botão clicado dentro da modal bate com o data-resp do botão "selecionar atividade"
         if (bto_clicado_resp == resp_slot) {
+            
+            var feedAcerto = document.getElementById("feedAcerto");
             // se sim, ele troca o botão selecionar atividade pelo texto do botão da atividade.
             $("[data-bs-target='#staticBackdrop'][data-resp='" + resp_slot + "']").parents(".td-cronograma-cultural").text($(this).text())
             // coloca o texto positivo da array/objeto feedbacks no body da modal feedback positivo
             $("#tabela_texto_acertou").text(feedback(bto_clicado_resp, "positivo"))
             // faz fechar automaticamente a modal das atividades antes de exibir a modal de feedback
             $("#staticBackdrop").modal("hide")
+            
+            feedAcerto.play();
             // exibe a modal de feedback positivo
             $("#associar_colulas_acertou").modal("show")
             // adiciona +1 na variavel de fim de jogo
@@ -33,6 +37,10 @@ $(function () {
             // remove o botão clicado da modal
             $(this).remove()
         } else {
+            
+            var feedErro = document.getElementById("feedErro");
+            feedErro.play();
+
             // caso o jogador erre, 
             // coloca o texto dentro da body da modal de feedback negativo
             $("#tabela_texto_errou").text(feedback(bto_clicado_resp, "negativo"))

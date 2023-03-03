@@ -13,7 +13,9 @@ html, body{
 .breaker{
     word-break: break-all;
 }
-
+.caixa.icone.ilustra2{
+    margin-left: 0;
+}
 .italico {
     font-weight: 200;
     font-style: italic;
